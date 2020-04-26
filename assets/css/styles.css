@@ -1,0 +1,49 @@
+:root{
+	font-size: 18px;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Century Gothic';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #A1A1A1;
+}
+
+.drum-pad{
+	width: 500px;
+	height: 600px;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 20px;
+	padding: 3rem;
+	background: #0A0B0E;
+	border-radius: 10px;
+}
+
+.drum-pad .pad{
+	background: #48474A;
+	border-radius: 5px;
+}
+
+.drum-pad .pad.active{
+	box-shadow: 0 0 5px 10px #ED0417;
+	background: #3E3D3E;
+}
+
+.drum-pad .pad:last-child{
+	grid-column: 1 / 4;
+}
+
+.keys{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
